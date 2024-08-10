@@ -80,8 +80,8 @@ function getForecast(cityName) {
                 forecastDiv.appendChild(forecastDateEl);
 
                 let iconEl = document.createElement('img');
-                iconEl.src = `https://openweathermap.org/img/wn/${data.weather[i].icon}.png`;
-                document.querySelector('.display-weather').appendChild(iconEl);
+                iconEl.src = `https://openweathermap.org/img/wn/${data.list[i].weather[0].icon}.png`;
+                forecastDiv.appendChild(iconEl);
 
                 let tempEl = document.createElement("p");
                 tempEl.textContent = "Temp: " + data.list[i].main.temp + "F";
