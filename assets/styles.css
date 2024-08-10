@@ -1,8 +1,32 @@
 body {
     font-family: 'Fira Sans', sans-serif;
+    padding: 0;
+    margin: 0;
 }
 
 h1 {
     font-family: 'Merriweather', serif;
     font-weight: 700;
+    color: white;
+    background-image: linear-gradient(to right, rgb(107, 97, 245), rgb(85, 3, 161));
+    text-align: center;
 }
+
+.title {
+    width: 100%;
+    padding: 10px;
+}
+
+.card {
+    border: 1px solid #1a1a1a;
+    margin-bottom: 1rem;
+  }
+
+  .display-forecast {
+    display: flex;
+  }
+
+  .display-forecast div {
+    margin: 15px;
+    border: solid 1px black;
+  }
